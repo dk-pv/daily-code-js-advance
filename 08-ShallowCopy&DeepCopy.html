@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                        //primitive datatype (string,number,boolean)
+                        //defalt = deep copy
+
+        let num1 = 20
+        let num2 = num1
+        console.log(num1); // output : 20
+        console.log(num2); // output : 20
+
+        num1 = "dani"
+        console.log(num1); // output : "dani"
+        console.log(num2); // ouput : 20 
+
+
+
+                    //array & OBJECT
+                        // defalt = shallowcopy
+        let salesEmployees = ["mani","sugu","suresh"]
+        let productionEmployees = salesEmployees
+        console.log(salesEmployees);
+        console.log(productionEmployees);
+        
+        salesEmployees.push('sugumar')
+        console.log()
+        console.log(salesEmployees);
+        console.log(productionEmployees);
+
+
+                    //array & OBJECT
+                        // defalt = shallowcopy
+                        // change to = deep copy
+
+        //method 1 (json)
+                    //in array
+        let salesEmployees1 = ["mani","sugu","suresh"]
+        let Str = JSON.stringify(salesEmployees1) // array convert to plain string
+        let productionEmployees1 = JSON.parse(Str); // plain string convert to array
+        console.log(salesEmployees1);
+        console.log(productionEmployees1);
+        
+        salesEmployees1.push('sugumar')
+
+        console.log()
+        console.log(salesEmployees1);
+        console.log(productionEmployees1);
+
+        /*
+        convert the code in single line( line number = 44 and  45)
+
+        let productionEmployees1 = JSON.parse(JSON.stringify(salesEmployees1))
+        */
+
+
+                     // in object 
+        let employee1 = {
+        name : "dilsha",
+        place : "kondotty"
+        }
+        employee2 = JSON.parse(JSON.stringify(employee1))
+
+        console.log(employee1);
+        console.log(employee2);
+
+        employee1.name = "ramesh"
+
+        console.log(employee1);
+        console.log(employee2);
+
+
+        //method 2 (spread oprator)
+
+            // in array
+        let salesEmployees2 = ["mani","sugu","suresh"]
+        let productionEmployees2 = [...salesEmployees2]
+
+        console.log(salesEmployees2);
+        console.log(productionEmployees2);
+        
+        salesEmployees2.push('sugumar')
+        console.log()
+        console.log(salesEmployees2);
+        console.log(productionEmployees2);
+
+  
+                // in object 
+        let employee3 = {
+            name : "sulu",
+            place : "calicut"
+        }
+        employee4 = {...employee3}
+
+        console.log(employee3);
+        console.log(employee4);
+
+        employee3.name = "ramesh"
+        
+        console.log(employee3);
+        console.log(employee4);
+
+        console.log("--------------------------------------------------")
+
+        
+
+        // method 3 (only for object)
+    
+    let person1 ={
+        name : "tom",
+        age : 32
+    }
+    let person2 = Object.assign({},person1) 
+    
+
+    console.log(person1)
+    console.log(person2)
+    
+    person1.name = "jery"
+    person1.age = 52
+
+    console.log(person1)
+    console.log(person2)
+
+      
+        
+        
+
+        
+
+        
+        
+    </script>
+</body>
+</html>

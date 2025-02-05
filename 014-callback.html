@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+
+    <ul id="postList">
+
+    </ul>
+
+    
+    <script>
+
+        // setTimeout( () =>{
+        //     console.log("timer")
+        // },5000)
+
+        // // sample callback function 
+        // function mainfunction(callback){
+        //     console.log("hy guys")
+        //     callback()
+        // }
+        // mainfunction(function callback(){
+        //     console.log("ewlcome to the heaven");        
+        // })
+
+
+
+        // sum(dispalayConsole , 10 , 20)
+        // function sum(callback , x,y){
+        //     let result = x+y;
+        //     callback(result)
+        // }
+        // function dispalayConsole(result){
+        //     console.log(result);
+            
+        // }
+
+
+        //
+
+        // console.log("dansish")
+        // setTimeout ( ()=> console.log("hy"),10000)
+
+
+        // setTimeout( () => {
+        //     console.log(3);
+        //     setTimeout( () => {
+        //         console.log(2)
+        //         setTimeout(() => {
+        //             console.log(1)
+        //         },2000)
+        //     },2000)
+        // },2000)
+
+
+
+        // console.log("start")
+        // function getData(callback){
+        //     setTimeout(() => {
+        //         callback("dansih pv")
+        //     },3000)
+        // }
+        // getData((value) => {
+        //     console.log(value)
+        // })
+
+        // console.log("end");
+
+
+
+
+
+        // function getData1(callback){
+        //     setTimeout(() => {
+        //         callback(10)
+        //     },1000)
+        // }
+        // function getData2(callback){
+        //     setTimeout(() => {
+        //         callback(20)
+        //     },1000)
+        // }
+        // function getData3(callback){
+        //     setTimeout(() => {
+        //         callback(30)
+        //     },1000)
+        // }
+        // getData1((value1) => {
+        //     getData2((value2) => {
+        //         getData3((value3) => {
+        //             console.log(value1 + value2 + value3)
+        //         })
+        //     })
+        // })
+
+
+
+
+        // function x(callback){
+        //     console.log("welcome to javascript")
+        //     callback()
+        // }
+        // x(function y(){
+        //     console.log("welcome to advance javascript")
+        // })
+        
+
+
+
+        // const post = [
+        //     {id:1 , title:"indroduction"},
+        //     {id:2 , title:"chapter 1 "},
+        //     {id:3 , title:"chapter 2 "},
+        //     {id:4 , title:"chapter 3 "},
+        //     {id:5 , title:"conclution "}
+
+        // ]
+
+        // const getpost = () =>{
+        //     let lists = '';
+        //     setTimeout(() => {
+        //         post.forEach(post =>{
+        //             lists =lists+`<li> ${post.id} - ${post.title} </li>`;
+        //         })
+        //         document.getElementById("postList").innerHTML = lists
+        //     }, 1000);
+        // }
+        
+        // const addpost = (addPost,callback) =>{
+        //     setTimeout(() => {
+        //         post.push(addPost)
+        //         callback()
+        //     }, 2000);
+
+        // }
+        // addpost({id:6 , title:"summary of your module 1"},getpost)
+
+
+    </script>
+</body>
+</html>

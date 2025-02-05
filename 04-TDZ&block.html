@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        console.log(b)  // this line is in temporal dead zone
+        let a = 10;
+        console.log(a)
+        var b = 100;
+
+
+                // block scope
+        {
+            var x = 10;
+            let y = 20;
+            const z = 30;
+            console.log(x);
+            console.log(y);
+            console.log(z);
+        }
+        console.log(x);  // only access x , because y & z is block scope only access in the  block ({....})
+        
+
+        class personINFO{ 
+            constructor(name,age,place){
+                this.name=name;
+                this.age=age;
+                this.place=place
+            }
+        }
+        let id1 = new personINFO("danish",20,"calicut")
+        console.log(id1)
+
+
+        // deep copy
+        let name = 'danish'
+        let name2=name
+        console.log(name)
+        console.log(name2)
+        
+        name = "faizy"
+
+        console.log(name)
+        console.log(name2)
+
+        
+        //shallow copy
+        ary=[10,20,30]
+        ary2=[...ary]
+        console.log(ary)
+        console.log(ary2);
+        ary.push("100")
+
+        console.log(ary)
+        console.log(ary2);
+        
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car {
+            constructor(brand) {
+                this.brand = brand;
+            }
+        }
+        let myCar = new Car("Toyota"); // ✅ `Car` class-ന്റെ ഒരു instance (object)
+        console.log(myCar.brand); // Output: Toyota
+
+
+
+
+        // 
+        class bike{
+            constructor(brand,modelname,year){
+                this.brand = brand
+                this.modelname = modelname
+                this.year =year
+            }
+        }
+        let mybike = new bike("JAVA","Bobber","2025")
+        console.log(mybike.year , mybike.brand , mybike.modelname)
+
+        console.log(mybike instanceof bike); // ✅ true (myCar is an instance of Car)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                            // example 1
+
+        // normal way
+        function add(a,b){
+            return a+b
+        }
+        console.log(add(10,20));
+
+        //Currying (2 arguments)
+        function add1(num1){
+            return function(num2){
+                return num1+num2
+            }
+        }
+        console.log(add1(10)(20));
+
+        //Currying (3 arguments)
+        function multipy(number1){
+            return function(number2){
+                return function(number3){
+                    return number1*number2*number3
+                }
+            }
+        }
+        console.log(multipy(30)(20)(10))
+
+
+        // curring(pass 2 argument, 1 argument is empty )
+        function sum(x){
+            return function(y){
+                if(y === undefined){
+                    return x
+                }
+            }
+        }    
+        console.log(sum(1)());
+
+
+
+        // curring(pass multiple  argument,  last paradhisis is empty )
+        function add4(x){
+            return function(y){
+                if ( y === undefined){
+                    return x;
+                }
+                return add4(x+y)
+            }
+        }
+        console.log(add4(10)())
+        console.log(add4(10)(20)())
+        console.log(add4(10)(20)(30)())
+        console.log(add4(10)(20)(30)(40)())
+
+
+
+
+        
+        
+            
+    </script>
+</body>
+</html>

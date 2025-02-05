@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                        // Coercion or type conversion (2 types)
+                        // 1. implicit (automatic)  2. explicit (manual)
+
+        //implicit 
+        console.log("5"+2);  // output:"52" (number convert in to string)
+        console.log("5"-2) // output: 3 (string convert in to number)
+        console.log("5"*2); // output: 10 (string to number)
+        console.log("5"/2); // output:2.5 (string to number)
+        
+        // explicit
+        console.log(Number("50"))  // output : 50 (number)
+        console.log(Number("50") +20) // output :70
+        console.log(String(50)+22); // output : 5022
+        
+
+
+
+
+                            // memory leak
+    
+        let interval = setInterval(() => console.log("Running..."), 5000);// ❌ Memory leak if not cleared
+
+        clearInterval(interval); // ✅ Fix
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+                    // this is the normal way create a object
+
+        //getFullYear() = to get current year
+        let person1 = {
+            name : "danish",
+            dateOfBirth:1952,
+            place : "manjeri",
+            getage:function(){
+                return new Date().getFullYear() - this.dateOfBirth;
+            }
+        }
+        let person2 = {
+            name : "sulu",
+            dateOfBirth:1982,
+            place : "malappuram",
+            getage:function(){
+                return new Date().getFullYear() - this.dateOfBirth;
+            }
+        } 
+        let person3 = {
+            name : "mani",
+            dateOfBirth:2001,
+            place : "kollam",
+            getage:function(){
+                return new Date().getFullYear() - this.dateOfBirth;
+            }
+        }
+        console.log(person1);
+        console.log(person2);
+        console.log(person3);        
+        console.log(person1.name , person1.getage());
+        console.log(person2.name,person2.getage());
+        console.log(person3.name,person3.getage());
+
+
+
+                      // other way create object using class(same the top of the programe)
+        // this is the class :
+                    // make multiple objects using class (object property is  adding the class ) 
+        class studentDetails{
+            name;
+            dateOfBirth;
+            place;
+            getage(){
+                return new Date().getFullYear() - this.dateOfBirth;
+            }
+            constructor(name,dateOfBirth,place){
+                // constructor function is the add values in object
+                this.name =name
+                this.dateOfBirth =dateOfBirth
+                this.place = place
+                
+            }
+            static printMinDOB(...args){
+                let aryage = args.map((items => items.getage()))
+                console.log(Math.min(...aryage))
+
+                let arydob = args.map((items => items.dateOfBirth))
+                console.log(Math.max(...arydob))
+            }
+        }
+        let student1 = new studentDetails("danish",1998,"manjeri");
+        let student2 = new studentDetails("shilu",2005,"kochi"); 
+        let student3 = new studentDetails("manu",2009,"chennai");
+        let student4 = new studentDetails("nani",1995,"delhi");
+        let student5 = new studentDetails("thomas",2000,"pala");
+
+        console.log(student1,student1.name , student1.getage())
+        console.log(student2,student2.name , student2.getage())
+        console.log(student3,student3.name , student3.getage())
+        console.log(student4,student4.name , student4.getage())
+        console.log(student5,student5.name , student5.getage())
+
+        studentDetails.printMinDOB(student1,student2,student3,student4,student5)
+
+
+
+        
+
+
+        
+
+          
+    </script>
+</body>
+</html>

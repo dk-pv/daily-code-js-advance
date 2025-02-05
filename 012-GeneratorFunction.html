@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function *fruits(){
+            yield "apple"
+            yield "orange"
+            yield "pinapple"
+            yield "kiwi"
+        }
+        let obj = fruits()
+        
+        // only print values
+        console.log(obj.next().value);
+        console.log(obj.next().value);
+        console.log(obj.next().value);
+        console.log(obj.next().value);
+        console.log(obj.next().value);
+
+        // print value and done
+        console.log(obj.next());
+        console.log(obj.next());
+        console.log(obj.next());
+        console.log(obj.next());
+        console.log(obj.next());
+
+
+        function *animals(){
+            yield "dog"
+            yield "cat"
+            yield "elephant"
+        }
+        let obj1 = animals()
+        console.log(obj1.next())
+        console.log(obj1.next())
+        console.log(obj1.next())
+
+        class cars {
+            constructor(company,model,year) {
+                this.company=company
+                this.model = model
+                this.year = year
+            }
+        }
+        let car1 = new cars("Toyoto","Fortuner",2001)
+        console.log(car1)
+
+
+
+
+
+
+
+
+
+
+
+        function multiply(a){
+            return function(b){
+                return function(c){
+                    return function(d){
+                        return function (){
+                            return a*b*c*d
+                        }
+                    }
+                }
+            }
+        }
+        console.log(multiply(1)(2)(3)(4)())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function addition(x){
+            return function(y){
+                return function(z){
+                    return x+y+z
+                }
+            }
+        }
+        console.log(addition(50)(500)(5000))
+
+
+
+
+
+
+
+
+        function *mycars(){
+            yield "G-wagon"
+            yield "Defender"
+            yield "Polo GT"
+        }
+        let carcollection= mycars()
+        console.log(carcollection.next())
+        console.log(carcollection.next())
+        console.log(carcollection.next())
+
+
+
+    </script>
+</body>
+</html>

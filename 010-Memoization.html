@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //example 1
+        const cache = {};
+        function add(x,y){
+            const uniqueKey = x + "," + y ;
+            if (uniqueKey in cache){
+                console.log(`output from cache : ${cache[uniqueKey]}`);
+                return cache[uniqueKey];
+            }
+            const result = x + y;
+            cache[uniqueKey] = result;
+            console.log(`output without cache : ${cache[uniqueKey]}`);
+            return cache[uniqueKey]
+        }
+        add(20,70)
+        add(20,70)
+        add(50,80)
+        add(50,80)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        let x = {}
+        function addition(a,b){
+            const uk = a + "," + b
+            if (uk in x){
+                console.log(`output from cache : ${x[uk]}`);
+                return x[uk]
+            }
+            let result = a*b
+            x[uk] = result
+            console.log(`output without cache : ${x[uk]}`);
+            return x[uk]
+        }
+        addition(500,2000)
+        addition(500,2000)
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+        //example 2
+        const cache1 = {};
+        function sumOfNumbers(number){
+            const uniqueKey1 = number;
+            if (uniqueKey1 in cache1){
+                return (`output from cache : ${cache1[uniqueKey1]}`);
+        
+            }
+            let result = 0;
+            for (x=1 ; x <= number ; x++){
+                result = result + x
+            }
+            cache1[uniqueKey1] = result
+            return (`output without cache : ${cache1[uniqueKey1]}`)   
+            
+        }
+        console.log(sumOfNumbers(5))
+        console.log(sumOfNumbers(5))
+        console.log(sumOfNumbers(5))
+
+
+
+        
+
+
+      
+
+    </script>
+</body>
+</html>

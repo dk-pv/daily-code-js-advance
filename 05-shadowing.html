@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                                // Shadowing
+
+                /* 2 variables diclared (declared in same keyword and name) in different scope a variable shadow or replace the other variable */
+                   
+        var a = 100;
+        {
+            var a = 10;
+            var b = 20;
+            var c = 30;
+            console.log(a)
+            console.log(b)
+            console.log(c)
+        }
+        console.log(a)  // inner scope variable replace outer scope variable (output is : 10)
+
+
+
+        
+        let x = 1000;
+        {
+            let x = 100
+            let y = 200;
+            let z = 300;
+            console.log(x)
+            console.log(y)
+            console.log(z)
+        }
+        console.log(x)  // outer scope variable replace inner scope variable (output is : 1000)
+        
+        var f = 250;
+        function d(){
+            var f = 350;
+            console.log(f); 
+        }
+        d()
+        console.log(f)
+
+
+
+                                // illegal shadowing
+
+
+        // function test() {
+        //     let q = 10;
+        //     if (true) {
+        //         var q = 20; // ❌ Illegal shadowing (var cannot redeclare let)
+        //     }
+        // }
+        // test();
+
+    </script>
+</body>
+</html>
