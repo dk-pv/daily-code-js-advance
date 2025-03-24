@@ -1,228 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        // class carDetail {
-        //     constructor(company , model , color , year ) {
-        //         this.company = company
-        //         this.model = model
-        //         this.color = color
-        //         this.year = year
-        //     }
-        // }
-        // let myFirstCar = new carDetail ("Mercedes-Benz","G-Wagon","Black",2024)
-        // console.log(myFirstCar)
-        // console.log(`i buy a new car ${myFirstCar.company} ${myFirstCar.model} and ${myFirstCar.color} color `)
-
-
-
-                    // copy  shallow and deep
-
-
-
-        // let developer1 = {name:"danish"}
-        // let developer2 = developer1
-
-        // developer1.name="mani"
-
-        // console.log(developer1)
-        // console.log(developer2)
-
-
-    
-        // let person1 = {age:20}
-        // let person2 = JSON.parse(JSON.stringify(person1))
-
-        // person1.age = 500   
-        // person2.age = 80
-
-        // console.log(person1)
-        // console.log(person2)
-        
-
-        // let person1 = {age:20}
-        // let person2 = {...person1}
-
-        // person2.age = 80
-
-        // console.log(person1)
-        // console.log(person2)
-
-
-        // let person1 = {age:20}
-        // let person2 = Object.assign({},person1)
-
-        // person1.age = 500   
-
-        // console.log(person1)
-        // console.log(person2)
-
-
-
-        // let person1 = {name : "danish" , company :"techy" , gender:"male" ,skills:{role:"frendend" , domain : "mern"}}
-
-        // let person2 = JSON.parse(JSON.stringify(person1))
-
-        // person2.name = "sumesh"
-        // person2.skills.role = "fullstack"
-        // person2.skills.domain = "poython"
-
-        // console.log(person1)
-        // console.log(person2)
-
-
-    // const cache = {};
-    // function add(a,b){
-    //     const uniqueKey = a+","+b;
-    //     if( a+","+b ){
-    //         console.log(`output from cache ${cache[uniqueKey]}`)
-    //         cache[uniqueKey];
-    //         return cache[uniqueKey];
-    //     }
-    //     const result = a + b;
-    //     cache[uniqueKey] = result;
-    //     console.log("output without cache "+cache[uniqueKey]);
-    //     return cache[uniqueKey];
-    // }
-
-    // add(10,20);
-
-
-    // class persons {
-    //     constructor(name , age , place) {
-    //         this.name = name;
-    //         this.age = age;
-    //         this.place = place
-    //     }
-    // }
-    // let person1 = new persons("danish" , 20 , "manjeri")
-    // let person2 = new persons("ss" , 200 , "malappuram")
-
-    // console.log(person1,person2)
-
-
-    // function* numbers(){
-    //     yield 1;
-    //     yield 2;
-    //     yield 3;
-    //     yield 4;
-    //     yield 5;
-    //     yield 6;
-    // }
-    // const generator = numbers()
-    // console.log(generator.next())
-    // console.log(generator.next())
-    // console.log(generator.next())
-    // console.log(generator.next())
-    // console.log(generator.next())
-    // console.log(generator.next())
-    // console.log(generator.next())
-
-
-
-    // function* boysNames(){
-    //     yield "manu";
-    //     yield "mahru";
-    //     yield "lalu"
-    // }        
-    // const dk = boysNames();
-    // console.log(dk.next())
-    // console.log(dk.next())
-    // console.log(dk.next())
-    // console.log(dk.next())
-
-
-    // function sum(a){
-    //     return function(b){
-    //         return function(c){
-    //             return a+b+c;
-    //         }
-    //     }
-    // }    
-    // console.log(sum(10)(20)(30))
-
-
-    // function x(callbak){
-    //     console.log("Danish puthanveetil");
-    //     callbak()
-    // }
-    // x(function y(){
-    //     console.log("I,m a guy lived in kerala")
-    // })
-
-    
-
-
-    // const name = new Promise((resolve, reject) => {
-    //     const nameIs = "danish" ; 
-    //     if (nameIs ==="danish"){
-    //         resolve("your name is fetched successfully")
-    //     }else{
-    //         reject("failed to fetch")
-    //     }
-    // })
-    // name 
-    //     .then((res) =>{
-    //         console.log(res)
-    //     })
-    //     .catch((error) =>{
-    //         console.error(error);    
-    //     })
-
-
-
-
-        
-    
-
-
-
-
-
-
-        // let ary1=[10,20,30]
-        // let ary2 =[...ary1]
-
-        // ary1[0] = "dani"
-
-        // console.log(ary1)
-        // console.log(ary2)
-
-        
-
-        // hoisting 
-
-        // name("Danish")
-        // console.log(job)
-
-
-        // function name(x) {
-        //     console.log("my name is "+x)
-        // }
-
-        // let job = "software developer"
-
-
-
-
-        var c = 1
-        a();
-        b();
-        console.log(c)
-
-        function a (){
-            var  c = 10
-            console.log(c)           
+      // class carDetail {
+      //     constructor(company , model , color , year ) {
+      //         this.company = company
+      //         this.model = model
+      //         this.color = color
+      //         this.year = year
+      //     }
+      // }
+      // let myFirstCar = new carDetail ("Mercedes-Benz","G-Wagon","Black",2024)
+      // console.log(myFirstCar)
+      // console.log(`i buy a new car ${myFirstCar.company} ${myFirstCar.model} and ${myFirstCar.color} color `)
+
+      // copy  shallow and deep
+
+      // let developer1 = {name:"danish"}
+      // let developer2 = developer1
+
+      // developer1.name="mani"
+
+      // console.log(developer1)
+      // console.log(developer2)
+
+      // let person1 = {age:20}
+      // let person2 = JSON.parse(JSON.stringify(person1))
+
+      // person1.age = 500
+      // person2.age = 80
+
+      // console.log(person1)
+      // console.log(person2)
+
+      // let person1 = {age:20}
+      // let person2 = {...person1}
+
+      // person2.age = 80
+
+      // console.log(person1)
+      // console.log(person2)
+
+      // let person1 = {age:20}
+      // let person2 = Object.assign({},person1)
+
+      // person1.age = 500
+
+      // console.log(person1)
+      // console.log(person2)
+
+      // let person1 = {name : "danish" , company :"techy" , gender:"male" ,skills:{role:"frendend" , domain : "mern"}}
+
+      // let person2 = JSON.parse(JSON.stringify(person1))
+
+      // person2.name = "sumesh"
+      // person2.skills.role = "fullstack"
+      // person2.skills.domain = "poython"
+
+      // console.log(person1)
+      // console.log(person2)
+
+      // const cache = {};
+      // function add(a,b){
+      //     const uniqueKey = a+","+b;
+      //     if( a+","+b ){
+      //         console.log(`output from cache ${cache[uniqueKey]}`)
+      //         cache[uniqueKey];
+      //         return cache[uniqueKey];
+      //     }
+      //     const result = a + b;
+      //     cache[uniqueKey] = result;
+      //     console.log("output without cache "+cache[uniqueKey]);
+      //     return cache[uniqueKey];
+      // }
+
+      // add(10,20);
+
+      // class persons {
+      //     constructor(name , age , place) {
+      //         this.name = name;
+      //         this.age = age;
+      //         this.place = place
+      //     }
+      // }
+      // let person1 = new persons("danish" , 20 , "manjeri")
+      // let person2 = new persons("ss" , 200 , "malappuram")
+
+      // console.log(person1,person2)
+
+      // function* numbers(){
+      //     yield 1;
+      //     yield 2;
+      //     yield 3;
+      //     yield 4;
+      //     yield 5;
+      //     yield 6;
+      // }
+      // const generator = numbers()
+      // console.log(generator.next())
+      // console.log(generator.next())
+      // console.log(generator.next())
+      // console.log(generator.next())
+      // console.log(generator.next())
+      // console.log(generator.next())
+      // console.log(generator.next())
+
+      // function* boysNames(){
+      //     yield "manu";
+      //     yield "mahru";
+      //     yield "lalu"
+      // }
+      // const dk = boysNames();
+      // console.log(dk.next())
+      // console.log(dk.next())
+      // console.log(dk.next())
+      // console.log(dk.next())
+
+      // function sum(a){
+      //     return function(b){
+      //         return function(c){
+      //             return a+b+c;
+      //         }
+      //     }
+      // }
+      // console.log(sum(10)(20)(30))
+
+      // function x(callbak){
+      //     console.log("Danish puthanveetil");
+      //     callbak()
+      // }
+      // x(function y(){
+      //     console.log("I,m a guy lived in kerala")
+      // })
+
+      // const name = new Promise((resolve, reject) => {
+      //     const nameIs = "danish" ;
+      //     if (nameIs ==="danish"){
+      //         resolve("your name is fetched successfully")
+      //     }else{
+      //         reject("failed to fetch")
+      //     }
+      // })
+      // name
+      //     .then((res) =>{
+      //         console.log(res)
+      //     })
+      //     .catch((error) =>{
+      //         console.error(error);
+      //     })
+
+      // let ary1=[10,20,30]
+      // let ary2 =[...ary1]
+
+      // ary1[0] = "dani"
+
+      // console.log(ary1)
+      // console.log(ary2)
+
+      // hoisting
+
+      // name("Danish")
+      // console.log(job)
+
+      // function name(x) {
+      //     console.log("my name is "+x)
+      // }
+
+      // let job = "software developer"
+
+      // var c = 1
+      // a();
+      // b();
+      // console.log(c)
+
+      // function a (){
+      //     var  c = 10
+      //     console.log(c)
+      // }
+      // function b() {
+      //     var  c = 100
+      //     console.log(c)
+      // }
+ 
+      //////////////////////////////////////////////////////////////////////////////
+
+                // map function
+
+      const numbers = [10, 20, 30, 40, 50, 60, 70];
+      let result = numbers.map((x) => x * 2);
+      console.log(result);
+
+
+                    // filter function
+
+      const numbers1 = [10, 20, 30, 40, 50, 60, 70];
+      const result1 = numbers1.filter((x) => x > 50 )
+      console.log(result1);
+
+
+      const numbers2 = [10, 20, 30, 40, 50, 60, 70];
+      const result2  = numbers2.filter((x) => x%2==0)
+      console.log(result2)
+
+
+
+                        // reduce fuction
+
+    // sum of an array (old way)
+    const numbers3 = [10, 20, 30, 40, 50, 60, 70];
+    let sum = 0 ;
+    for (let x = 0  ; x < numbers3.length ; x++){
+        sum = sum + numbers3[x]
+    }
+    console.log(sum)
+
+    // new way (reduce)
+    const numbers4 = [10, 20, 30, 40, 50, 60, 70];
+    const  result3 = numbers4.reduce((acumalator , currentValue) => {
+        acumalator  = acumalator + currentValue;
+        return acumalator;
+    },0)
+    console.log(result3)
+
+    // find max value 
+    const numbers5 = [10, 20, 30, 40, 50, 60, 70];
+    const result4  = numbers5.reduce(( max, curr) =>{
+        if (curr > max) {
+            max = curr
         }
-        function b() {
-            var  c = 100
-            console.log(c)           
-        }
+        return max
+    },0)
+    console.log(result4)
 
 
 
@@ -230,26 +243,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
+      
+        
 
 
     </script>
-</body>
+  </body>
 </html>
