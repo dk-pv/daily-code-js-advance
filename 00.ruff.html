@@ -240,6 +240,36 @@
 
 
 
+    const users = [
+        {fname : "dani" , lname : "kukku" , age : "25"},
+        {fname : "sulu" , lname : "krishna" , age : "28"},
+        {fname : "mani" , lname : "kuttan" , age : "45"},
+        {fname : "devu" , lname : "idayil" , age : "20"},
+        {fname : "ms" , lname : "dhoni" , age : "40"},
+        {fname : "rohit" , lname : "sharma" , age : "38"},
+        {fname : "hardik" , lname : "pandya" , age : "30"},
+        {fname : "donarld" , lname : "drump" , age : "25"},
+        {fname : "d" , lname : "david" , age : "25"},
+        {fname : "niyas" , lname : "kr" , age : "40"},
+    ]
+
+    // return fullname 
+    const output = users.map((FullName) => FullName.fname +" "+FullName.lname) 
+    console.log(output)
+
+
+
+    // find same age users
+    const output1 = users.reduce((acc , curr) =>{
+        if(acc[curr.age]){
+            acc[curr.age =  ++acc[curr.age]]
+        }else{
+            acc[curr.age] = 1
+        }
+        return acc;
+    },{})
+    console.log(output1)
+
 
 
 
