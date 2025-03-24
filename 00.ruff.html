@@ -294,6 +294,43 @@
     const  output3 =  usersList.forEach((item,index) => item.fname)
     console.log(output3)
 
+///////////////////////////////////////////////////////////////////////////////////
+
+            // callback example
+   
+    function sample(name , callbakFun) {
+        console.log(`my name is ${name}`)
+        callbakFun()    
+    }
+    const goodbye = () =>{
+        console.log("good bye")
+    }
+    sample("danish" , goodbye )
+
+
+
+
+            // Recursion
+
+    const  sum1 = (n) =>{
+        if(n<=0){
+            return 0;
+        }else{
+            return n + sum1(n-1)
+        }
+    }
+    console.log(sum1(5))
+
+
+    console.log(Math.floor( Math.random() * 100))
+
+
+    
+
+
     </script>
   </body>
 </html>
+
+
+
