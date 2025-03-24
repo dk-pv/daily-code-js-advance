@@ -197,18 +197,32 @@
 
         // hoisting 
 
-        name("Danish")
-        console.log(job)
+        // name("Danish")
+        // console.log(job)
 
 
-        function name(x) {
-            console.log("my name is "+x)
+        // function name(x) {
+        //     console.log("my name is "+x)
+        // }
+
+        // let job = "software developer"
+
+
+
+
+        var c = 1
+        a();
+        b();
+        console.log(c)
+
+        function a (){
+            var  c = 10
+            console.log(c)           
         }
-
-        let job = "software developer"
-
-
-
+        function b() {
+            var  c = 100
+            console.log(c)           
+        }
 
 
 
