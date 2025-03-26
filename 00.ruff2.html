@@ -154,32 +154,190 @@
         // th()
 
 
+        // const person = {
+        //     name: "danish pv",
+        //     age : 20 , 
+        //     place : "manjeri",
+        //     method : getName
+        // }
+
+        // const person2 = {
+        //     name: "lahan pv",
+        //     age : 10 , 
+        //     place : "manjeri",
+        //     method : getName
+        // }
+        // person.method()
+        // person2.method()
 
 
-        const person = {
-            name: "danish pv",
-            age : 20 , 
-            place : "manjeri",
-            method : getName
-        }
-
-        const person2 = {
-            name: "lahan pv",
-            age : 10 , 
-            place : "manjeri",
-            method : getName
-        }
-        person.method()
-        person2.method()
-
-
-        function getName(){
-            console.log(`my name is ${this.name} . i from ${this.place} , i'm ${this.age} years old . `)
-        }
+        // function getName(){
+        //     console.log(`my name is ${this.name} . i from ${this.place} , i'm ${this.age} years old . `)
+        // }
     
         
 
 
+        //call , apply , bind
+
+
+        // const person = {
+        //     name: "danish pv",
+        //     age : 20 , 
+        //     place : "manjeri",
+        // }
+
+        // const person2 = {
+        //     name: "lahan pv",
+        //     age : 10 , 
+        //     place : "manjeri",
+        // }
+        // function getName(a,b,c,...num){
+        //     console.log(this.name)
+        //     console.log(this.place)
+        //     console.log(this.age)
+        //     console.log(c)
+        //     console.log(num)
+
+        // }
+
+        // getName.call(person)
+        // getName.call(person2)
+
+        // getName.apply(person)
+        // getName.apply(person2)
+
+        // const newGetName = getName.bind(person)
+        // newGetName()
+        // const newGetName2 = getName.bind(person2)
+        // newGetName2()
+
+        // // if i want pass argument
+        // getName.call(person , 20 , 30 , 40)
+        // getName.apply(person2,[200,300,400,5000])
+
+
+
+
+
+
+                                 // Map and Set
+        
+        // let user = new Map()
+        // user.set("id" , 1)
+        // user.set("name" , "dani")
+        // user.set("place" , "India")
+        // user.set("age" , 18)
+        // console.log(user)
+        // console.log(user.get("name"))
+        // console.log(user.get("age"))
+        // console.log(user.get("id"))
+        // console.log(user.has("id"))
+        // console.log(user.delete("id"));
+        // console.log(user.clear())
+        // console.log(user.size)
+
+
+
+        // let person = new Set()
+        // person.add(50)
+        // person.add("dani")
+        // person.add("10")
+        // person.add("100")
+        // person.add("1000")
+        // person.add("10000")
+        // console.log(person)
+        // console.log(person.has(50))
+        // console.log(person.size);
+        
+
+        /////////////////////////////////////////////////////////////////////////
+
+
+                        // exeption handling / errorhandling
+        
+        // try , catch , finally
+
+        // try{
+        //     // code
+        // }catch{
+        //     // cathing  error
+        // }finally{
+        //     // cleanup code
+        // }
+
+
+
+        // console.log("started")
+
+        // let x ;
+        // try{
+        //     console.log("try block")
+        //     x = num1();
+        // }catch(e){
+        //     console.log("catch block")
+        //     a = 0
+        // }
+        // let y = num2()
+
+        // const resultAdd = result(x , y)
+        // console.log(resultAdd)
+
+        // console.log("ented")
+
+        // function num1() {
+        //     console.log("value 1 ")
+            
+        //     return 100;
+        // }
+        // function num2() {
+        //     console.log("value 2")
+        //     return 250;
+        // }
+        // function result(x,y) {
+        //     return x + y
+        // }
+
+        
+        
+
+        // throwing your own exception
+        // function validateAge(age){
+        //     if(age < 0){
+        //         throw new Error("age cannot be negative -----");
+        //     }
+        // }
+        // validateAge(-1)
+
+
+
+
+
+
+                                //class
+
+                                function പുറത്തെ_ഫംഗ്ഷൻ() {
+    const സന്ദേശം = "ഹലോ വേൾഡ്!";
+    
+    function ഉള്ളിലെ_ഫംഗ്ഷൻ() {
+        console.log(സന്ദേശം); // പുറത്തെ വേരിയബിൾ ഉപയോഗിക്കുന്നു
+    }
+    
+    return ഉള്ളിലെ_ഫംഗ്ഷൻ;
+}
+
+const എന്റെ_ഫംഗ്ഷൻ = പുറത്തെ_ഫംഗ്ഷൻ();
+എന്റെ_ഫംഗ്ഷൻ(); // "ഹലോ വേൾഡ്!" ഔട്ട്പുട്ട് ആയി കാണിക്കും
+
+
+
+
+
+    
+        
+
+
+        
 
 
 
