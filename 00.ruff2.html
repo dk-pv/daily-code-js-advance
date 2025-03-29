@@ -332,7 +332,20 @@
 
 
 
+const x  = new Promise((resolve, reject) => {
+    resolve(["java" , "python"])
+})
 
+const y = new Promise((resolve, reject) => {
+    resolve(["react" , "angular"])
+})
+
+x.then((Response) =>{
+    console.log(Response)
+})
+y.then((Response) =>{
+    console.log(Response)
+})
     
         
 
