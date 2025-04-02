@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+                        // this is the  example for 'callback Hell'
+
+        const cart = ["sheos" , 'mobile' , 'shirts' , 'jeans' , 'sandals' , 'skincare']
+        api.createOrder(cart , function(){
+            api.proceedToPayment(function(){
+                api.showOrderSummary(
+                    function (){
+                        api.updateWallet()
+                    }
+                )
+            })
+        })
+
+
+        
+    </script>
+</body>
+</html>
